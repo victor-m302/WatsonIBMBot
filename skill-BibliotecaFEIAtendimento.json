@@ -1,0 +1,771 @@
+{
+  "intents": [
+    {
+      "intent": "Bitly",
+      "examples": [
+        {
+          "text": "Como deixar os links menores?"
+        },
+        {
+          "text": "Como encurtar links?"
+        },
+        {
+          "text": "Como gerenciar links para acesso mais rápido?"
+        }
+      ],
+      "description": "Mostra para o usuário como Encurtar links."
+    },
+    {
+      "intent": "CombateAoPlagio",
+      "examples": [
+        {
+          "text": "Checar plágio no meu trabalho"
+        },
+        {
+          "text": "Como faz para saber se meu trabalho tem plágio?"
+        },
+        {
+          "text": "Quero saber se meu trabalho tem plágio"
+        },
+        {
+          "text": "Tem ferramenta pra detectar plágio?"
+        }
+      ],
+      "description": "Combate Ao Plagio, oferecer ao usuário ferramentas, etc."
+    },
+    {
+      "intent": "fichaCatalografica",
+      "examples": [
+        {
+          "text": "Onde posso encontrar informações sobre Ficha Catalográfica?"
+        },
+        {
+          "text": "Tem Ficha Catalográfica na Biblioteca?"
+        },
+        {
+          "text": "Você pode me ajudar a encontrar informações sobre Ficha Catalográfica?"
+        }
+      ],
+      "description": "Relacionada a informações de ficha catalográfica"
+    },
+    {
+      "intent": "GuiaElaboraçãoTrabalhosAcademicos",
+      "examples": [
+        {
+          "text": "Como eu elaboro um trabalho acadêmico?"
+        },
+        {
+          "text": "Como eu faço um trabalho acadêmico?"
+        },
+        {
+          "text": "Como eu irei montar um trabalho acadêmico?"
+        },
+        {
+          "text": "Como eu organizo um trabalho acadêmico?"
+        }
+      ],
+      "description": "Guia para elaboração de trabalhos acadêmicos da FEI"
+    },
+    {
+      "intent": "LaTeX",
+      "examples": [
+        {
+          "text": "Como usar o LaTeX ?"
+        },
+        {
+          "text": "Onde baixar o LaTeX ?"
+        },
+        {
+          "text": "O que é LaTeX ?"
+        },
+        {
+          "text": "O que eu faço com o LaTeX ?"
+        }
+      ],
+      "description": "A classe LaTeX da FEI é um arquivo de formatação de trabalhos acadêmicos para usuários de LaTeX."
+    },
+    {
+      "intent": "Mendeley",
+      "examples": [
+        {
+          "text": "Gostaria de gerenciar referências, buscar, arquivar e compartilhar documentos."
+        },
+        {
+          "text": "Onde posso buscar, arquivar e compartilhar documentos?"
+        },
+        {
+          "text": "Onde posso gerenciar referências?"
+        }
+      ],
+      "description": "Rede social que permite gerenciar referências, buscar, arquivar e compartilhar documentos."
+    },
+    {
+      "intent": "MORE",
+      "examples": [
+        {
+          "text": "Como posso colocar citações no texto e referências no formato ABNT com um programa?"
+        },
+        {
+          "text": "Existe um software que coloca citações no texto e referências no formato ABNT?"
+        },
+        {
+          "text": "Preciso de um programa que coloca citações no texto e referências no formato ABNT."
+        },
+        {
+          "text": "Preciso de um software que coloca citações no texto e referências no formato ABNT."
+        }
+      ],
+      "description": "Mecanismo Online para Referências (MORE)"
+    },
+    {
+      "intent": "OrientaçãoNormalizaçãoTrabalhosAcademicos",
+      "examples": [
+        {
+          "text": "Como deixar os textos em ABNT?"
+        },
+        {
+          "text": "Como normalizar os trabalhos acadêmicos em ABNT?"
+        },
+        {
+          "text": "Como padronizar os textos em ABNT?"
+        }
+      ],
+      "description": "Orientação para normalização de trabalhos acadêmicos - Ajuda os alunos a padronizar os textos em ABNT"
+    },
+    {
+      "intent": "ReformaOrtograficaGuia",
+      "examples": [
+        {
+          "text": "Necessito do Guia da nova reforma ortográfica."
+        },
+        {
+          "text": "Onde encontro o Guia da nova reforma ortográfica?"
+        },
+        {
+          "text": "Quero verificar o Guia da nova reforma ortográfica."
+        }
+      ],
+      "description": "Guia da nova reforma ortográfica"
+    },
+    {
+      "intent": "TrabalhosAcademicosEntrega",
+      "examples": [
+        {
+          "text": "Como encontro informações sobre entrega de trabalhos acadêmicos?"
+        },
+        {
+          "text": "Como é possível encontrar informações sobre entrega de trabalhos acadêmicos?"
+        },
+        {
+          "text": "Como faz para entregar trabalho acadêmico?"
+        },
+        {
+          "text": "Tem informação sobre entrega de trabalhos acadêmicos?"
+        }
+      ],
+      "description": "Informações sobre entrega de trabalhos acadêmicos"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Bitly",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "encurtador",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "link pequeno",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "links",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "combateAoPlagio2",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Eliminar",
+          "synonyms": [
+            "Combater",
+            "Identificar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Evitar",
+          "synonyms": [
+            "Prevenir"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Plágio",
+          "synonyms": [
+            "Cópia",
+            "Copiar",
+            "Fraude"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "fichaCatalografica",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "documento catalográfico",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fichas catalográficas",
+          "synonyms": [
+            "ficha catalográfica"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "GuiaElaboraçãoTrabalhosAcademicos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Citação",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Estrutura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Template",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "trabalho acadêmico",
+          "synonyms": [
+            "trabalho de iniciação científica",
+            "trabalho do curso de administração"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tutorial de lista de ilustrações",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tutorial de lista de tabelas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tutorial de paginação",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tutorial de sumário",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tutorial para salvar arquivo como PDF/A",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "LaTeX",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "arquivo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "formatação",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LaTeX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "trabalhos acadêmicos",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Mendeley",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "artigos",
+          "synonyms": [
+            "pesquisa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "gerenciar referências",
+          "synonyms": [
+            "buscar referências"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mendeley",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "referências",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "MORE",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ABNT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "automaticamente",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "citações",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ferramenta gratuita",
+          "synonyms": [
+            "free software",
+            "software"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "produz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "referências",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "OrientacaoNormalizarABNT",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ABNT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Formatar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Normalizar",
+          "synonyms": [
+            "Deixar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Orientação",
+          "synonyms": [
+            "Suporte"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ReformaOrtograficaGuia",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Guia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Novas regras do Português",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Novo Padrão de Escrita",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reforma Ortografica",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "TrabalhosAcademicosEntrega",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Como entregar",
+          "synonyms": [
+            "Como faz o envio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Entrega",
+          "synonyms": [
+            "Envio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Procedimento",
+          "synonyms": [
+            "Etapas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Trabalho Acadêmico",
+          "synonyms": [
+            "Trabalho de Doutorado",
+            "Trabalho de Iniciação Científica",
+            "Trabalho de mestrado",
+            "Trabalho de pós graduação",
+            "Trabalho de TCC",
+            "Trabalhos Acadêmicos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, eu sou o ZuraFEI bot, o bot que irá te ajudar na secção Trabalhos Acadêmicos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_10_1614976766828",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Ficha Catalográfica",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sobre ficha catalográfica? Claro, você pode elaborar uma por meio desse link: http://sofia.fei.edu.br/ficha/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@fichaCatalografica:(fichas catalográficas) ||  @fichaCatalografica:(documento catalográfico) || #fichaCatalografica",
+      "dialog_node": "node_10_1614976766828",
+      "previous_sibling": "node_10_1614977506112"
+    },
+    {
+      "type": "standard",
+      "title": "Procedimento para entrega de Trabalhos Acadêmicos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os trabalhos acadêmicos devem ser entregues de acordo com os procedimentos da secretaria do curso. Cabe ao orientador, juntamente com a secretaria, definir quais trabalhos serão entregues, assim como, efetuar a entrega na biblioteca."
+              },
+              {
+                "text": "Alguns procedimentos são obrigatórios para que essa entrega seja realizada:\na) o trabalho acadêmico deve ser normalizado de acordo com as orientações do Guia para Elaboração de Trabalhos Acadêmicos da FEI;\n"
+              },
+              {
+                "text": "b) uma cópia impressa em capa dura na cor preta e letras douradas (Monografias e TCCs) ou na cor azul-marinho e letras douradas (Teses e Dissertações);\n- uma mídia (CD ou DVD) contendo somente o PDF/A para as monografias e TCCs;\n- uma cópia da versão final da dissertação ou tese no formato PDF/A encaminhada para o e-mail:\nbib.dissertacoes_teses@fei.edu.br;\n- termo de autorização para a publicação eletrônica preenchido e assinado por todos os autores do trabalho;\n"
+              },
+              {
+                "text": "c) a entrega na biblioteca deverá ser feita pelo orientador ou pela secretaria do curso. A biblioteca não aceita trabalhos entregues diretamente pelos alunos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#TrabalhosAcademicosEntrega && @TrabalhosAcademicosEntrega",
+      "dialog_node": "node_10_1614977506112",
+      "previous_sibling": "node_5_1614979594509"
+    },
+    {
+      "type": "standard",
+      "title": "Mendeley ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode usar o Mendeley.\nO Mendeley é considerado uma rede social acadêmica que conecta pesquisadores e permite gerenciar referências, buscar, arquivar e compartilhar documentos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Mendeley || @Mendeley",
+      "dialog_node": "node_10_1614980436277",
+      "previous_sibling": "node_9_1614980348080"
+    },
+    {
+      "type": "standard",
+      "title": "Guia para elaboração de trabalhos acadêmicos da FEI",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A biblioteca disponibiliza os tutoriais de configuração do Word e um template do trabalho pronto, mais um recurso para ajudá-lo na estruturação do TCC.\nInformamos que o guia está disponível somente na versão eletrônica."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#GuiaElaboraçãoTrabalhosAcademicos || @GuiaElaboraçãoTrabalhosAcademicos",
+      "dialog_node": "node_1_1614979908136",
+      "previous_sibling": "node_10_1614980436277"
+    },
+    {
+      "type": "standard",
+      "title": "LaTeX",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A classe LaTeX da FEI é um arquivo de formatação de trabalhos acadêmicos para usuários de LaTeX, de acordo com as normas de formatação do Centro Universitário FEI. Ela está disponível nas principais distribuições de LaTeX (MikTeX no Windows, MacTeX no MacOS e TeX Live no Linux), possui um manual de utilização em PDF e um template para ajudar usuários a iniciar seus trabalhos acadêmicos.\nMikTeX : https://miktex.org/\nMacTeX : http://www.tug.org/mactex/\nTeX Live : https://www.tug.org/texlive/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#LaTeX || @LaTeX",
+      "dialog_node": "node_3_1614996458306",
+      "previous_sibling": "node_1_1614979908136"
+    },
+    {
+      "type": "standard",
+      "title": "Combate Ao Plágio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A biblioteca do Centro Universitário FEI, por recomendação da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), divulga ao seu público um texto informativo, com intuito de coibir o plágio nas produções acadêmicas desenvolvidas na IES.\n\nPara auxiliá-los segue opções gratuitas de detecção de plágio:\n\nFarejador de Plágio\n\nSite: http://www.plagiarismcombat.com/\n\nPlagium\n\nSite: http://www.plagium.com/\n\nPlagiarisma\n\nSite: http://plagiarisma.net/\n\nSaiba mais sobre o plágio, clique aqui!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#CombateAoPlagio || @combateAoPlagio2",
+      "dialog_node": "node_5_1614979594509",
+      "previous_sibling": "node_3_1614996458306"
+    },
+    {
+      "type": "standard",
+      "title": "Orientação para normalização de trabalhos acadêmicos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para mais informações:\nhttps://docs.google.com/forms/d/1HMTDr5U_1Dp8pVBV7WhXVrm7ULJyRAT99Ey6DSPZ3Fo/edit"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#OrientaçãoNormalizaçãoTrabalhosAcademicos || @OrientacaoNormalizarABNT",
+      "dialog_node": "node_6_1614979790116",
+      "previous_sibling": "node_7_1614981097604"
+    },
+    {
+      "type": "standard",
+      "title": "Guia da nova reforma ortográfica",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O guia para a nova reforma ortográfica está disponível em:\nhttps://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/docs/biblioteca/guia_reforma_ortografica_cp.pdf"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ReformaOrtograficaGuia || @ReformaOrtograficaGuia",
+      "dialog_node": "node_7_1614981097604",
+      "previous_sibling": "node_9_1614996726603"
+    },
+    {
+      "type": "standard",
+      "title": "Bit.ly",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode encurtar links com o Bit.ly"
+              },
+              {
+                "text": "bit.ly é um dos mais famosos gerenciadores e encurtadores de URL da internet. \nConfira! bit.ly"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Bitly || @Bitly",
+      "dialog_node": "node_9_1614980348080",
+      "previous_sibling": "node_6_1614979790116"
+    },
+    {
+      "type": "standard",
+      "title": "MORE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "MORE é uma ferramenta gratuita e fácil de usar, que produz automaticamente citações no texto e referências no formato ABNT. Acesse aqui: http://www.more.ufsc.br/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#MORE || @MORE",
+      "dialog_node": "node_9_1614996726603",
+      "previous_sibling": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "BibliotecaFEIAtendimento",
+  "language": "pt-br",
+  "description": "Soluciona dúvidas"
+}
